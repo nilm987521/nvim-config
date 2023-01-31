@@ -2,7 +2,7 @@
 require("plugins")
 -- 快捷鍵
 require("keymap")
--- LSP
+-- Language Server Protocol
 require('lsp')
 
 vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
@@ -40,10 +40,7 @@ vim.o.sidescrolloff = 8
 -- 顯示左側圖示指示列
 vim.wo.signcolumn = "yes"
 -- 右側參考線，超過表示程式碼太長了，考慮換行
-vim.wo.colorcolumn = "80"
-
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.wo.colorcolumn = "100"
 
 vim.opt.termguicolors = true
 

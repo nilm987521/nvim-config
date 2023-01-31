@@ -5,7 +5,7 @@ Plug 'marko-cerovac/material.nvim'
 Plug 'petertriho/nvim-scrollbar'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
-Plug 'itchyny/lightline.vim'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'pacha/vem-tabline'
 -- LSP
 Plug 'glepnir/lspsaga.nvim'
@@ -19,6 +19,7 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'folke/neodev.nvim'
 
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'karb94/neoscroll.nvim'
@@ -37,13 +38,7 @@ Plug 'ethanholz/nvim-lastplace'
 Plug 'preservim/nerdcommenter'
 Plug 'mhartington/formatter.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
--- Plug("iamcco/markdown-preview.nvim",
---   {
---     run = "cd app && npm install",
---     setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
---     ft = { "markdown" }
---   }
--- )
+Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/which-key.nvim'
 vim.call('plug#end')
 
@@ -59,5 +54,5 @@ require("plugins.tabLine")
 require("plugins.nerdCommneter")
 require("plugins.formatter")
 require("plugins.tree-sitter")
--- require("plugins.markdownPreview")
+require('plugins.gitsigns')
 require 'nvim-lastplace'.setup()
