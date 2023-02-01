@@ -4,10 +4,6 @@ require("plugins")
 require("keymap")
 -- Language Server Protocol
 require('lsp')
-
-vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
-vim.cmd("set noshowmode")
-
 -- 編輯行亮色
 vim.o.cursorline= true
 -- 檔案編碼
@@ -41,6 +37,10 @@ vim.o.sidescrolloff = 8
 vim.wo.signcolumn = "yes"
 -- 右側參考線，超過表示程式碼太長了，考慮換行
 vim.wo.colorcolumn = "100"
-
 vim.opt.termguicolors = true
-
+-- 設定顏色，須留意terminal shell tmux都要是truecolor
+vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
+vim.cmd("set noshowmode")
+vim.cmd("hi DiffAdd guibg=#00ff00 guifg=#1c2b33")
+vim.cmd("hi DiffDelete guibg=#ff0000 guifg=#1c2b33")
+vim.cmd("hi DiffChange guifg=#ffffff guibg=#1c2b33")
