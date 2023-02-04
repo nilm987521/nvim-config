@@ -16,6 +16,7 @@ require("mason-lspconfig").setup({
     "dockerls",
     "rust_analyzer",
     "yamlls",
+    "clangd"
   },
 })
 
