@@ -20,11 +20,13 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'folke/neodev.nvim'
+Plug 'SmiteshP/nvim-navic'
 
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'karb94/neoscroll.nvim'
 Plug 'kevinhwang91/nvim-hlslens'
-Plug 'Yggdroot/indentLine'
+Plug 'mfussenegger/nvim-jdtls'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
@@ -40,6 +42,7 @@ Plug 'mhartington/formatter.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/which-key.nvim'
+Plug 'machakann/vim-highlightedyank'
 vim.call('plug#end')
 
 require("plugins.hlSearch")
@@ -55,4 +58,7 @@ require("plugins.nerdCommneter")
 require("plugins.formatter")
 require("plugins.tree-sitter")
 require('plugins.gitsigns')
+
+require('plugins.YankHighlight')
+require('plugins.LastLocation')
 require 'nvim-lastplace'.setup()
