@@ -16,7 +16,6 @@ mason.setup({
 
 mason_lspconfig.setup({
   ensure_installed = {
-    "sumneko_lua",
     "tailwindcss",
     "bashls",
     "dockerls",
@@ -83,18 +82,6 @@ cmp.setup.cmdline(':', {
     { name = 'cmdline' }
   })
 })
-
--- nvim的plugin開發
-require("neodev").setup()
-lspconfig.sumneko_lua.setup {
-  settings = {
-    Lua = {
-      completion = {
-        callSnippet = "Replace"
-      }
-    }
-  }
-}
 
 lspconfig.clangd.setup {
     on_attach = function(client, bufnr)
